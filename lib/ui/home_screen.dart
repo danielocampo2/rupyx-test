@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:github_repos_rupyx/bloc/bloc_provider.dart';
 import 'package:github_repos_rupyx/bloc/local_repos_bloc.dart';
-import 'package:github_repos_rupyx/bloc/remote_repos_bloc.dart';
 import 'package:github_repos_rupyx/dataLayer/models/github_repo.dart';
 import 'package:github_repos_rupyx/dataLayer/models/response.dart';
 import 'package:github_repos_rupyx/ui/create_repo_screen.dart';
@@ -125,7 +124,6 @@ class HomeScreen extends StatelessWidget {
   }
 
   Widget _buildList(List<GithubRepo> results) {
-    // 2
     return ListView.separated(
       itemCount: results.length,
       separatorBuilder: (BuildContext context, int index) => Divider(),

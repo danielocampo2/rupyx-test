@@ -19,11 +19,9 @@ class FakeClientWithResults implements Client {
 
 class FakeClientWithError implements Client {
 
-  var response;
-
   @override
   Future<Response<List<GithubRepo>>> searchRepos(String query) async {
-    return response;
+    return Response(ResponseStatus.error);
   }
 
 }

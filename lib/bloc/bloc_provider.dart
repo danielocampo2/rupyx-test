@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'bloc.dart';
 
 class BlocProvider<T extends Bloc> extends StatefulWidget {
@@ -10,13 +9,9 @@ class BlocProvider<T extends Bloc> extends StatefulWidget {
       : super(key: key);
 
   static T of<T extends Bloc>(BuildContext context) {
-//    final type = _providerType<BlocProvider<T>>();
     final BlocProvider<T> provider = context.findAncestorWidgetOfExactType();
     return provider.bloc;
   }
-
-  // 3
-//  static Type _providerType<T>() => T;
 
   @override
   State createState() => _BlocProviderState();

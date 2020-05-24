@@ -3,7 +3,6 @@ import 'package:github_repos_rupyx/bloc/bloc_provider.dart';
 import 'package:github_repos_rupyx/bloc/remote_repos_bloc.dart';
 import 'package:github_repos_rupyx/dataLayer/models/github_repo.dart';
 import 'package:github_repos_rupyx/dataLayer/models/response.dart';
-import 'package:github_repos_rupyx/ui/create_repo_screen.dart';
 import 'package:github_repos_rupyx/ui/repo_details_screen.dart';
 
 class SearchReposScreen extends StatelessWidget {
@@ -69,7 +68,6 @@ class SearchReposScreen extends StatelessWidget {
   }
 
   Widget _buildSearchResults(List<GithubRepo> results) {
-    // 2
     return ListView.separated(
       itemCount: results.length,
       separatorBuilder: (BuildContext context, int index) => Divider(),
