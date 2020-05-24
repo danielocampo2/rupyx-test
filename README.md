@@ -1,16 +1,9 @@
-# github_repos_rupyx
+# Rupyx Technical Assignment
 
-A new Flutter application.
+Use Flutter and Dart to build an app with the following primary functions:
+● Search bar, where you can enter some name and search real github repositories.
+● By clicking the repo show info about it
+● Add FAB, by clicking on it - show UI where you can create your own repo
+○ Add new repo to the list on repositories
+● On the details page, if it's your fake repo, allow the user to edit it
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
